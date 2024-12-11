@@ -5,7 +5,7 @@ using StreamReader sr = new StreamReader("data.txt");
 List<long> listA = new();
 List<long> listB = new();
 
-var lines = sr.ReadToEnd().Split("\n");
+var lines = sr.ReadToEnd().Split("\r\n");
 foreach(var line in lines)
 {
   var data = line.Split("|");
